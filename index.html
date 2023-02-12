@@ -5,8 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>SoundMagic</title>
+    <title>SoundTech Magic</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div>
+        <div class="header-principal">
+          <div class="main-header text-center">
+            <h1 class="degradado-verde">SoundTech Magic</h1>
+          </div>
+        </div>
+        <button class="main-btn hamburger hamburger--vortex" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div class="main-menu">
+          <nav class="main-nav">
+            <a class="menu-link" href="#">Inicio</a>
+            <a class="menu-link" href="#">Nosotros</a>
+            <a class="menu-link" href="#">Contacto</a>
+          </nav>
+        </div>
+
+        <!-- fin de nav -->
+      </div>
+      <div class="header-imagen-texto">
+        <div class="contenedor contenido-header">
+          <div class="imagen-header">
+            <picture>
+              <source
+                sizes="1920w"
+                srcset="img/header.avif 1920w"
+                type="image/avif"
+              />
+              <source
+                sizes="1920w"
+                srcset="img/header.webp 1920w"
+                type="image/webp"
+              />
+              <source
+                sizes="1920w"
+                srcset="img/header.jpg 1920w"
+                type="image/jpeg"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="img/header.jpg"
+                lazyalt="imagen"
+                width="1000"
+                height="600"
+              />
+            </picture>
+          </div>
+          <!-- .imagen-header -->
+
+          <div class="texto-header">
+            <p class="tagline-producto">Calidad de Sonido Envolvente</p>
+            <h1 class="nombre-producto degradado-verde">MagicSoundB</h1>
+            <p class="descripcion-producto">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus fugiat sequi explicabo laudantium architecto, nobis
+              impedit aliquam earum quasi.
+            </p>
+            <p class="precio-producto">Desde <span>$199</span></p>
+          </div>
+        </div>
+        <!-- .contenido-header -->
+      </div>
+    </header>
+
+    <section class="contenedor">
+      <div class="iconos">
+        <div class="icono">
+          <img src="img/icono-sonido.svg" alt="sonido" />
+          <h3>Gran Sonido</h3>
+          <p>
+            The standard chunk of Lorem Ipsum used since the 1500s is The
+            standard chunk of Lorem Ipsum used since the 1500s is reproduced.
+          </p>
+        </div>
+        <div class="icono">
+          <img src="img/icono-garantia.svg" alt="sonido" />
+          <h3>Garantía de por vida</h3>
+          <p>Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum</p>
+        </div>
+        <div class="icono">
+          <img src="img/icono-bateria.svg" alt="sonido" />
+          <h3>+20 horas de Bateria</h3>
+          <p>The standard chunk of Lorem Ipsum used since the 1500s</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre-tech">
+      <div class="contenedor sobre-tech">
+        <div class="texto-sobre-tech">
+          <h2>Sobre los <span>MagicSoundB</span></h2>
+          <p>
+            sheets containing Lorem Ipsum passages, and more recently with
+            desktop publishing software like Aldus PageMaker including versions
+            of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--fin header-->
+    <script src="js/scripts.js" type="module"></script>
+  </body>
 </html>
