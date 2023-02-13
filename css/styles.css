@@ -235,6 +235,7 @@ img {
 .icono img {
   width: 5rem;
   margin: 0 auto;
+  color: var(--negro);
 }
 .icono h3 {
   color: var(--primario);
@@ -254,15 +255,36 @@ img {
   background-repeat: repeat, no-repeat;
   background-size: 100%, 110rem;
 }
+@media (min-width: 768px) {
+  .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primario) 0%
+      ),
+      url(../img/imagen-mujer.jpg);
+    background-position: center;
+    background-repeat: repeat, no-repeat;
+    background-size: 100%, 100%;
+  }
+}
+/* @media (min-width: 1600px) {
+  .sobre-tech {
+    background-size: 100%, 210rem;
+  }
+} */
 .sobre-tech-grid {
   display: grid;
-  grid-template-rows: repeat(2, 40rem);
+  grid-template-rows: repeat(2, 35rem);
   row-gap: var(--separacion);
 }
 @media (min-width: 768px) {
   .sobre-tech-grid {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: unset; /*eliminar fila*/
+    row-gap: unset;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: calc(var(--separacion) * 2);
+    padding: calc(var(--separacion) * 2) 0;
   }
 }
 .texto-sobre-tech {
@@ -271,6 +293,12 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-bottom: var(--separacion);
+}
+@media (min-width: 768px) {
+  .texto-sobre-tech {
+    padding-bottom: 0;
+  }
 }
 .texto-sobre-tech h2 {
   font-size: 4rem;
@@ -279,4 +307,56 @@ img {
   font-size: 2rem;
   line-height: 2;
   text-align: justify;
+}
+
+/** Modelos **/
+.modelos {
+  padding: var(--separacion) 0;
+}
+.header-modelos {
+  font-size: 6rem;
+  margin-bottom: var(--separacion);
+}
+.listado-modelos {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.modelo {
+  background-color: var(--grisClaro);
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+  color: var(--primario);
+  border-radius: 2rem;
+  min-height: 20rem;
+
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position: 90%, center;
+}
+.modelo h3 {
+  font-size: 2.4rem;
+}
+.modelo .precio {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 0;
+}
+.modelo:first-of-type {
+  margin-bottom: 0;
+}
+.modelo-x {
+  background-image: url(../img/modelo-x.svg);
+}
+.modelo-y {
+  background-image: url(../img/modelo-y.svg);
+}
+.modelo-z {
+  background-image: url(../img/modelo-z.svg);
+
+  color: var(--blanco);
+  background-color: var(--primario);
+}
+.modelo-z .precio {
+  font-size: 6rem;
 }
