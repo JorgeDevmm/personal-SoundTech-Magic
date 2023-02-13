@@ -345,6 +345,13 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  transition-property: transform, background-size;
+  transition-duration: 0.3s;
+}
+.modelo:hover {
+  transform: scale(1.1);
+  background-size: 30rem;
 }
 @media (min-width: 992px) {
   .modelo {
@@ -365,14 +372,15 @@ img {
 .modelo-x {
   background-image: url(../img/modelo-x.png);
 }
-.modelo-x .precio {
-  font-size: 6rem;
-}
+
 @media (min-width: 992px) {
   .modelo-x {
     grid-column: 1/2;
     grid-row: 1/3;
     background-size: 25rem;
+  }
+  .modelo-x .precio {
+    font-size: 6rem;
   }
 }
 .modelo-y {
