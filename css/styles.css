@@ -312,6 +312,7 @@ img {
 /** Modelos **/
 .modelos {
   padding: var(--separacion) 0;
+  margin-bottom: calc(var(--separacion) / 2);
 }
 .header-modelos {
   font-size: 6rem;
